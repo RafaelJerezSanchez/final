@@ -1,5 +1,5 @@
 export interface ICategoria {
-    name: string;
+    nombre: string;
     valor: number;
     poke1: string;
     poke2: string;
@@ -16,4 +16,6 @@ export interface ICategoria {
     nameinsert: string;
     tipo: string;
     imagen: string;
+    descripcion: string;
+    tipopoke: string;
 }

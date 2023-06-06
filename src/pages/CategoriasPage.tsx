@@ -24,8 +24,8 @@ export const CategoriasPage = () => {
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
-              <li key={categoria.name}>{categoria.name}</li>
-              <li key={categoria.name}>{categoria.valor}</li>
+              <li key={categoria.nombre}>{categoria.nombre}</li>
+              <li key={categoria.nombre}>{categoria.valor}</li>
               </>
             ))
           }
