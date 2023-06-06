@@ -41,7 +41,7 @@ export const routes: Route[] = [
         name: 'Login'
     },
     {
-        path: 'añadirpoke',
+        path: 'addpoke',
         component: Productos,
         name: 'Añade tu Pokemon'
     }

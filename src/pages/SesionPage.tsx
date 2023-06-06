@@ -19,7 +19,7 @@ export const SesionPage = () => {
       <div className="logincaja">
         <TextField id="outlined-basic" label="Correo" variant="outlined" />
         <TextField id="outlined-basic" label="Contraseña" variant="outlined" />
-        <Link to={'/productos'}>
+        <Link to={'/addpoke'}>
         <Button variant="contained">Iniciar Sesión</Button>
         </Link>
       </div>
