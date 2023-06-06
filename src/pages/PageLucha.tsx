@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { getCategorias } from '../firebase/FBcategorias';
 import './lucha.css'
-export const ProyectosPage = () => {
+export const PageLucha = () => {
   const [categorias, setCategorias] = useState<ICategoria[]>([])
   useEffect(() => {
     getCategorias()
