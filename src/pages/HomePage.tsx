@@ -7,12 +7,6 @@ import './Homeestilos.css'
 
 
 export const HomePage = () => {
-  // const { register, handleSubmit } = useForm<IPokemon>();
-  // const onAddCategoria = async (dataCategoria: IPokemon) => {
-  //   console.log(dataCategoria)
-  //   await newCategoria(dataCategoria)
-  //   window.location.reload();
-  // }
   const [Categorias, setCategorias] = useState<IPokemon[]>([])
   useEffect(() => {
     getPokemon()
@@ -41,82 +35,3 @@ export const HomePage = () => {
     </>
   )
 }
-
-// import React, { useEffect, useState } from 'react';
-// import { getPokemon, newPoke } from '../firebase/FBcategorias';
-// import './Home.css';
-// import { IPokemon } from '../interfaces/IPokemon';
-// import { useForm } from 'react-hook-form';
-// // import ReactPlayer from 'react-player';
-// // import { faMagnifyingGlass, faTrash } from '@fortawesome/free-solid-svg-icons';
-// // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
-// export const HomePage = () => {
-//   const [categorias, setCategorias] = useState<IPokemon[]>([]);
-//   useEffect(() => {
-//     getPokemon().then((res) => {
-//       console.log(...res);
-//       setCategorias([...res]);
-//     });
-//   }, []);
-
-//   useEffect(() => {
-//     const handleKeyUp = (e: KeyboardEvent) => {
-//       if ((e.target as HTMLInputElement).matches('#pokesearch')) {
-//         const inputValue = (e.target as HTMLInputElement).value.toLowerCase();
-//         document.querySelectorAll('.items').forEach((dino) => {
-//           const dinoName = dino?.textContent?.toLowerCase() || '';
-//           if (dinoName.toLowerCase().startsWith(inputValue)) {
-//             dino.classList.remove('none');
-//           } else {
-//             dino.classList.add('none');
-//           }
-//         });
-//       }
-//     };
-//     document.addEventListener('keyup', handleKeyUp);
-//     return () => {
-//       document.removeEventListener('keyup', handleKeyUp);
-//     };
-//   }, []);
-
-//   const { register, handleSubmit } = useForm<IPokemon>();
-//   const onAddPokes = async (datapoke: IPokemon) => {
-//     console.log(datapoke);
-//     await newPoke(datapoke);
-//     window.location.reload();
-//   };
-
-//   return (
-//     <section id='home'>
-//       <h1 id='tittle-home'>Ark Dinosaurs Search</h1>
-//       <form action='' id='formsearch'>
-//         <input type='search' className='inputsearch' placeholder='Search your Dino...' id='pokesearch'/>
-//       </form>
-//       <div className='cardscollection'>
-//         {categorias
-//           .map((dino) => (
-//             <div className='items'>
-//               <figure id='figimg'>
-//                 <img id='dinosimg' src={dino.imagen} alt='' />
-//               </figure>
-//               <h1 key={categorias.nombre}>{categorias.nombre}</h1>
-//               <p className='dinodescript'>{dino.descript}</p>
-//               <div className='cntdatos'>
-//                 <img className='dinopeso' src='' alt='' />
-//                 <h3>{dino.salud}</h3>
-//                 <img className='dinopeso' src='' alt='' />
-//                 <h3>{dino.stamina}</h3>
-//                 <img className='dinopeso' src='' alt='' />
-//                 <h3>{dino.peso}</h3>
-//               </div>
-//             </div>
-//           ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default HomePage;
-
