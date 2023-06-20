@@ -1,12 +1,17 @@
-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img#imgtable {
+    width: 160px;
 }
 
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
+td {
+    padding: 10px;
+}
+
+th {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+table{
+    background-color: rgba(251, 253, 252, 0.815);
+    margin: 0 auto;
 }

@@ -1,0 +1,47 @@
+.p5{
+   margin-bottom: 20px;
+   border-radius: 10px;
+   height: 750px;
+   width: 45%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   flex-direction: column;
+   padding: 20px;
+   text-align: center;
+}
+
+.p1 p{
+   text-align: center;
+}
+
+.card-cont{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+h1#NewCat{
+   text-align: center;
+}
+
+.p5{
+    background-image: linear-gradient(45deg, #02a037, #3333ff, yellow, red );
+    background-size: 150% 150%;
+    animation: animacion-gradient 7s linear infinite;
+  }
+  
+  @keyframes animacion-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

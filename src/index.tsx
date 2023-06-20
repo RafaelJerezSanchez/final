@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Suspense } from 'react';
 import { FirebaseAppProvider } from 'reactfire';
-import firebaseConfig from './firebase/config/firebaseConfig';
+import firebaseConfig from './firebase/firebaseConfig';
 
   const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

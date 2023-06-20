@@ -1,13 +1,13 @@
 import React from 'react'
-import { ICategoria } from '../interfaces/ICategoria';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { getCategorias } from '../firebase/FBcategorias';
+import { getPokemonAgua } from '../firebase/FBcategorias';
 import './agua.css'
+import { IPokemon } from '../interfaces/IPokemon';
 export const PageAgua = () => {
-  const [categorias, setCategorias] = useState<ICategoria[]>([])
+  const [categorias, setCategorias] = useState<IPokemon[]>([])
   useEffect(() => {
-    getCategorias()
+    getPokemonAgua()
       .then(res => {
         console.log(...res)
         setCategorias([...res])
@@ -16,24 +16,18 @@ export const PageAgua = () => {
   return (
     <>
 
-      <h2 id='NewCat'>POKEMONS TIPO AGUA</h2>
+      <h1 id='NewCat'>POKEMONS TIPO AGUA</h1>
+            <div className='poki'>
           {
             categorias.slice(0, 100).map((categoria) => (
-              <>
-              <div className='PokemonsAgua'>
-              <div className='pa1' >{categoria.pokeag1}
-              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/658.png"/></div>
-              <div className='pa2'>{categoria.pokeag2}
-              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/503.png"/></div>
-              <div className='pa3'>{categoria.pokeag3}
-              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/484.png" /></div>
-              <div className='pa4'>{categoria.pokeag4}
-              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/647.png"/></div>
-              {/* <div className='5'>{categoria.quinto}
-              <img src=""/></div> */}
+              <div className="p2">
+                <img src={categoria.imagen} />
+                <h2>{categoria.nombre}</h2>
+                <p>{categoria.descripcion}</p>
               </div>
-              </>
+              
             ))
 }
+</div>
 </>
 )}

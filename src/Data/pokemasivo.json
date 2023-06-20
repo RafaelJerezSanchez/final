@@ -1,0 +1,62 @@
+[
+    {
+    "descripcion": "Mueve rápidamente sus cuatro brazos para asestar incesantes golpes y puñetazos desde todos los ángulos.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png",
+    "nombre": "Machamp",
+    "tipo": "Lucha"
+    },
+    {
+    "descripcion": "Escupe un fuego tan caliente que funde las rocas. Causa incendios forestales sin querer.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+    "nombre": "Charizard",
+    "tipo": "Fuego"
+    },
+    {
+    "descripcion": "Se oculta en la sombra de su oponente y copia sus movimientos y su fuerza. Su imitación resulta más poderosa que el original.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/802.png",
+    "nombre": "Marshadow",
+    "tipo": "Lucha"
+    },
+    {
+    "descripcion": "Pokémon que atrae la victoria. Dicen que el Entrenador que lo lleve saldrá vencedor de cualquier batalla.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/494.png",
+    "nombre": "Victini",
+    "tipo": "Fuego"
+    },
+    {
+    "descripcion": "Pokémon legendario capaz de abrasar el mundo con sus llamas. Ayuda a quienes persiguen un mundo veraz.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/643.png",
+    "nombre": "Reshiram",
+    "tipo": "Fuego"
+    },    
+    {
+    "descripcion": "Comprime el agua y crea estrellas ninja con las que ataca al enemigo. Cuando las hace girar a gran velocidad cortan en dos hasta el metal.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/658.png",
+    "nombre": "Greninja",
+    "tipo": "Agua"
+    },    
+    {
+    "descripcion": "En un abrir y cerrar de ojos, puede desenvainar y envainar los sables que hay en sus patas delanteras.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/503.png",
+    "nombre": "Samurott",
+    "tipo": "Agua"
+    },
+    {
+    "descripcion": "Dicen que, como es capaz de detectar auras, percibe a sus rivales aunque no los vea y leer sus pensamientos a través de ellas. Comprende el lenguaje humano.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/448.png",
+    "nombre": "Lucario",
+    "tipo": "Lucha"
+    },
+    {
+    "descripcion": "Corre por mares, ríos o cualquier superficie acuática de todo el mundo. Aparece en aguas límpidas.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/647.png",
+    "nombre": "Keldeo",
+    "tipo": "Agua"
+    },
+    {
+    "descripcion": "Su corona de fuego demuestra su naturaleza ígnea. Nadie le gana en velocidad. Utiliza movimientos en combate únicos con fuego en manos y pies.",
+    "imagen": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/392.png",
+    "nombre": "Infernape",
+    "tipo": "Fuego"
+    }
+]
