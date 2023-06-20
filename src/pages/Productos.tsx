@@ -9,6 +9,7 @@ import { cargamasiva } from '../firebase/FBcategorias';
 import './Productosestilos.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export const Productos = () => {
   const { register, handleSubmit } = useForm<IPokemon>();
@@ -80,6 +81,11 @@ export const Productos = () => {
               <h4 id='NewCat'>Carga Masiva de Datos</h4>
               <Button variant='contained' onClick={cargamasiva}>Cargar Datos</Button>
             </Grid>
+            <Grid item xs={5} sx={{ backgroundColor: 'white', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
+              <Link to={'/home'}>
+              <Button variant="contained">LOG OUT</Button>
+              </Link>
+            </Grid>
           </form>
         </Grid>
       <table border={2}>
@@ -91,6 +97,7 @@ export const Productos = () => {
             <th>Imagen</th>
             <th>Borrar</th>
           </tr>
+          
         </thead>
         <tbody>
           {
@@ -118,12 +125,13 @@ export const Productos = () => {
           }
         </tbody>
       </table >
-
-
-
-
-
     </>
   );
 
 }
+
+{/* <div className="logoutcaja">
+  <Link to={'/home'}>
+  <Button variant="contained">LOG OUT</Button>
+  </Link>
+</div> */}

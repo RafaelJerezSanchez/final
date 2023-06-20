@@ -23,10 +23,10 @@ export const HomePage = () => {
     <div className="card-cont">
       {Categorias.map((categoria) => (
         <div key={categoria.nombre} className="p5">
-          <img src={categoria.imagen} />
+          <img src={categoria.imagen} className="imagenes"/>
           <h3>{categoria.nombre}</h3>
           <p>Tipo: {categoria.tipo}</p>
-          <p>Descripción: {categoria.descripcion}</p>
+          <p className="descr">Descripción: {categoria.descripcion}</p>
           {/* Agrega más elementos <p> para mostrar otras propiedades */}
         </div>
       ))}

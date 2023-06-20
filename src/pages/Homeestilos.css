@@ -45,3 +45,14 @@ h1#NewCat{
       background-position: 0% 50%;
     }
   }
+
+.imagenes{
+  height: 65%;
+  min-width: 200;
+  width: 65%;
+}
+
+.descr{
+  max-width: 200;
+  max-height: 200;
+}
