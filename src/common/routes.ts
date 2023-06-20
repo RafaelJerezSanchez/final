@@ -43,6 +43,6 @@ export const routes: Route[] = [
     {
         path: 'addpoke',
         component: Productos,
-        name: 'Añade tu Pokemon'
+        name: 'Backend'
     }
 ];
